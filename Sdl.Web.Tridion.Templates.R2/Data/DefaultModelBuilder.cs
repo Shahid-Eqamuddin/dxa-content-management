@@ -197,7 +197,7 @@ namespace Sdl.Web.Tridion.Templates.R2.Data
 
             return new BinaryContentData
             {
-                Url = Pipeline.RenderedItem.AddBinary(component).Url,
+                Url = AddBinary(component).Url,
                 FileName = binaryContent.Filename,
                 FileSize = binaryContent.Size,
                 MimeType = binaryContent.MultimediaType.MimeType

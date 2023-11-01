@@ -40,7 +40,8 @@ namespace Sdl.Web.Tridion.Templates.R2.Templates
                     ExpandLinkDepth = expandLinkDepth,
                     GenerateXpmMetadata = IsXpmEnabled || IsPreview,
                     Locale = GetLocale(),
-                    SchemasForRichTextEmbed = GetSchemasForRichTextEmbed()
+                    SchemasForRichTextEmbed = GetSchemasForRichTextEmbed(),
+                    SchemasForAsIsMultimediaUrls = GetSchemasForAsIsMultimediaUrls()
                 };
 
                 DataModelBuilderPipeline modelBuilderPipeline = new DataModelBuilderPipeline(renderedItem, settings, modelBuilderTypeNames);
